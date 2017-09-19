@@ -16,7 +16,7 @@ export default class Toggle extends PureComponent {
     this.handleBlur = this.handleBlur.bind(this)
     this.previouslyChecked = !!(props.checked || props.defaultChecked)
     this.state = {
-      checked: !(props.checked || props.defaultChecked),
+      checked: !!(props.checked || props.defaultChecked),
       hasFocus: false,
     }
   }
